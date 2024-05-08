@@ -1,0 +1,555 @@
+/* Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&;800&family=Poppins:wght@600&display=swap");
+
+/* General Style */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+h1,
+h2 {
+  font-family: "Poppins", sans-serif;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+body,
+input::placeholder {
+  min-height: 100dvh;
+  font-family: "Open Sans", sans-serif;
+  color: #00252e;
+}
+
+.wrapper {
+  padding: 0 2rem;
+}
+
+/* Buttons */
+.cta-white {
+  padding: 0.5rem 2rem;
+  border-radius: 50px;
+  border: 1px solid #fe52c0;
+  background-color: #fff;
+  box-shadow: 1px 1px 8px 0.1px rgba(0, 0, 0, 0.09);
+}
+
+.cta-white a,
+.cta-white a:hover {
+  color: #fe52c0;
+}
+
+.cta-purple-hero {
+  font-size: 1.3rem;
+  padding: 1.2rem 0;
+  max-width: 60%;
+  text-align: center;
+  border-radius: 50px;
+  margin: 0 auto 6rem;
+  background-color: #fe52c0;
+}
+
+.cta-purple-hero a {
+  color: #fff;
+  letter-spacing: 1px;
+}
+
+.cta-purple-community {
+  font-size: 1.3rem;
+  padding: 1.2rem 0;
+  width: 50%;
+  text-align: center;
+  border-radius: 50px;
+  margin: 0 auto;
+  background-color: #fe52c0;
+}
+
+.cta-purple-community a {
+  color: #fff;
+  letter-spacing: 1px;
+}
+
+.cta-purple-hero:hover,
+.cta-purple-community:hover {
+  background-color: #ff9bda;
+}
+
+.sub-btn {
+  padding: 1.2rem 0;
+  width: 50%;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #fff;
+  border-radius: 5px;
+  background-color: #fe52c0;
+  align-self: flex-end;
+}
+
+/* Header Section */
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10rem;
+  width: 100%;
+}
+
+.logo img {
+  width: 10rem;
+}
+
+/* Hero Section */
+
+.hero-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 4rem;
+  padding: 3rem 2rem 4rem;
+  margin-bottom: 4rem;
+}
+
+.hero-text > * {
+  text-align: center;
+}
+
+.hero-text h1 {
+  font-size: 2.5rem;
+  width: 90%;
+  margin: 0 auto 2rem;
+}
+
+.hero-text p {
+  font-size: 1.4rem;
+  text-align: center;
+  width: 90%;
+  line-height: 1.4;
+  margin: 0 auto 3rem;
+}
+
+/* Number Section */
+
+.number-section {
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.number-icon img {
+  width: 2.8rem;
+}
+
+.lg-number-text {
+  font-size: 5.5rem;
+  font-weight: 700;
+}
+
+.sm-number-text {
+  font-size: 1.3rem;
+  color: #7a848b;
+  text-align: center;
+}
+
+/* Cards Section */
+
+.cards-section {
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+  padding: 6rem 0 20rem;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 6rem;
+  padding: 4rem;
+  text-align: center;
+}
+
+.card p {
+  font-size: 1.4rem;
+  opacity: 0.7;
+  margin-top: 2rem;
+  line-height: 1.5;
+}
+
+.one,
+.third {
+  background-color: #f6fbff;
+}
+
+.desktop {
+  display: none;
+}
+
+/* Community Section */
+
+.community-section {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  text-align: center;
+  margin: auto;
+  padding: 4rem 0;
+  margin-top: -20rem;
+  margin-bottom: 6rem;
+}
+
+.community-section h2 {
+  font-size: 2.5rem;
+  color: #00252e;
+}
+
+/* Footer Section */
+
+.footer {
+  background-color: #00252e;
+  color: #fff;
+  padding: 6rem 2rem;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.newsletter-text,
+.info {
+  font-size: 1.5rem;
+  line-height: 1.6;
+}
+
+.subscribe {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-bottom: 10rem;
+}
+
+input {
+  width: 100%;
+  padding: 1.2rem 1.2rem;
+  border-radius: 5px;
+  border: none;
+}
+
+.logo img {
+  width: 17rem;
+}
+
+.info {
+  display: flex;
+  gap: 2rem;
+}
+
+.info img {
+  object-fit: contain;
+}
+
+.social-icons ul {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1.5rem;
+  margin-top: 5rem;
+}
+
+.social-icons li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  width: 3rem;
+  height: 3rem;
+}
+
+.social-icons img {
+  width: 1.3rem;
+  height: 1.3rem;
+}
+
+/******************************
+          RESPONSIVE
+******************************/
+
+@media (min-width: 376px) {
+  .mobile {
+    display: none;
+  }
+
+  .desktop {
+    display: block;
+  }
+}
+
+@media (min-width: 768px) {
+  /* Hero Section */
+  .hero-section {
+    padding-inline: 0;
+  }
+
+  .header {
+    padding-inline: 3rem;
+  }
+
+  .cta-white {
+    font-size: 1.4rem;
+    font-weight: bold;
+    padding: 1rem 3rem;
+  }
+
+  .cta-purple-hero {
+    font-size: 1.4rem;
+    max-width: 30%;
+  }
+
+  .hero-text h1 {
+    font-size: 3rem;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+  }
+
+  .hero-text p {
+    max-width: 80%;
+    font-size: 1.8rem;
+  }
+
+  .hero-img {
+    padding-inline: 3rem;
+    margin: auto;
+  }
+
+  /* Number Section */
+  .number-section {
+    flex-direction: row;
+    gap: 15rem;
+  }
+
+  .lg-number-text {
+    font-size: 8rem;
+  }
+
+  .sm-number-text {
+    font-size: 1.5rem;
+  }
+
+  /* Card Section */
+
+  .card {
+    display: flex;
+    flex-direction: row;
+    padding-inline: 3rem;
+  }
+
+  .one {
+    flex-direction: row-reverse;
+  }
+
+  .third {
+    flex-direction: row-reverse;
+    margin-bottom: 0;
+  }
+
+  .card-text-box {
+    text-align: left;
+    padding: 3rem;
+    align-self: center;
+  }
+
+  /* Community Section */
+  .community-section {
+    max-width: 70%;
+    padding: 1rem 0;
+  }
+
+  .cta-purple-community {
+    max-width: 40%;
+  }
+
+  /* Footer */
+
+  .footer {
+    padding-inline: 6rem;
+  }
+
+  .footer-wrapper {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 5rem;
+  }
+
+  .footer-wrapper > * {
+    flex: 1;
+  }
+}
+
+@media (min-width: 1024px) {
+  .header,
+  .card {
+    padding-inline: 6rem;
+  }
+
+  .hero-text h1 {
+    font-size: 4rem;
+  }
+
+  .hero-text p {
+    font-size: 2rem;
+    width: 70%;
+  }
+
+  .hero-img {
+    padding-inline: 6rem;
+  }
+
+  .card-text-box h2 {
+    font-size: 3rem;
+  }
+
+  .card-text-box p {
+    font-size: 1.6rem;
+  }
+
+  .community-section h2 {
+    font-size: 3rem;
+  }
+  .subscribe {
+    flex-direction: row;
+  }
+}
+
+@media (min-width: 1440px) {
+  .hero-img {
+    width: 1100px;
+  }
+
+  .hero-text-box {
+    align-self: center;
+  }
+
+  .hero-text h1 {
+    font-size: 4rem;
+    width: 80%;
+  }
+
+  .hero-text p {
+    font-size: 2rem;
+    width: 50%;
+  }
+
+  .cta-purple-hero {
+    font-size: 1.8rem;
+    padding: 1.8rem 3.8rem;
+    width: 40%;
+    margin-top: 4rem;
+    margin-bottom: 10rem;
+  }
+
+  .card-text-box {
+    padding: 0;
+  }
+
+  .card-text-box h2 {
+    font-size: 4rem;
+  }
+
+  .card-text-box p {
+    width: 90%;
+    font-size: 2rem;
+  }
+
+  .community-section {
+    padding: 5rem;
+    gap: 5rem;
+  }
+
+  .community-section h2 {
+    font-size: 4rem;
+  }
+
+  .cta-purple-community {
+    font-size: 1.8rem;
+    padding: 1.8rem 3.8rem;
+    margin-bottom: 0;
+  }
+
+  .newsletter-text {
+    width: 65%;
+  }
+
+  .info p {
+    width: 65%;
+  }
+}
+
+@media (min-width: 1920px) {
+  .desktop {
+    width: 1920px;
+  }
+
+  .hero-text h1 {
+    font-size: 6rem;
+  }
+
+  .hero-text p {
+    font-size: 2.5rem;
+  }
+
+  .cta-purple-hero {
+    width: 20%;
+  }
+
+  .number-icon img {
+    width: 5rem;
+  }
+  .lg-number-text {
+    font-size: 12rem;
+  }
+
+  .sm-number-text {
+    font-size: 2rem;
+  }
+
+  .header,
+  .card,
+  .footer {
+    padding-inline: 20rem;
+  }
+
+  .community-section {
+    width: 50%;
+  }
+
+  .social-icons {
+    align-self: flex-start;
+  }
+}
